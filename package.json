@@ -1,0 +1,28 @@
+{
+  "name": "swipyjs",
+  "title": "Swipy",
+  "version": "0.0.1",
+  "description": "A lightweight JavaScript library for simple touch swipe gesture events",
+  "license": "MIT",
+  "main": "src/swipy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteCube/swipy.git"
+  },
+  "keywords": [
+    "touch",
+    "events",
+    "gestures"
+  ],
+  "author": {
+    "name": "WhiteCube",
+    "email": "hello@whitecube.be"
+  },
+  "bugs": {
+    "url": "https://github.com/whiteCube/swipy/issues"
+  },
+  "homepage": "https://github.com/whiteCube/swipy#readme"
+}
