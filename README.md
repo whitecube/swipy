@@ -4,7 +4,13 @@ A lightweight JavaScript library for simple touch swipe gesture events.
 
 ## Installation
 
-__TO DO.__
+### NPM
+
+```npm i swipyjs```
+
+### Yarn
+
+```yarn add swipyjs```
 
 ## Usage
 
@@ -21,7 +27,9 @@ swipy.on('swipeleft', function(event, touches) {
 The callback function receives two parameters:
 
 - `event`: the last native `touchmove` event that was triggered.
-- `touches`: an object containing the current touch coordinates: ```javascript
+- `touches`: an object containing the current touch coordinates:
+
+```javascript
 {
     down: {x: null, y: null},
     up: {x: null, y: null},
