@@ -4,9 +4,12 @@
   "version": "0.0.2",
   "description": "A lightweight JavaScript library for simple touch swipe gesture events",
   "license": "MIT",
-  "main": "src/swipy.js",
+  "main": "dist/swipy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/whiteCube/swipy/issues"
   },
-  "homepage": "https://github.com/whiteCube/swipy#readme"
+  "homepage": "https://github.com/whiteCube/swipy#readme",
+  "dependencies": {
+    "laravel-mix": "^3.0.0"
+  }
 }
