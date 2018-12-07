@@ -11,7 +11,16 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/swipy.js', 'dist/');
+mix.options({
+        uglify: {
+            uglifyOptions: {
+                mangle: {
+                    keep_fnames: true,
+                }
+            }
+        }
+    })
+    .js('src/swipy.js', 'dist/');
 
 // Full API
 // mix.js(src, output);
