@@ -11,7 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.options({
+mix.webpackConfig({
+        output: {
+            library: 'swipyjs',
+            libraryTarget: 'umd',
+            umdNamedDefine: true
+        }
+    })
+    .options({
         uglify: {
             uglifyOptions: {
                 mangle: {
