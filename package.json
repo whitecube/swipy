@@ -28,7 +28,7 @@
     "url": "https://github.com/whiteCube/swipy/issues"
   },
   "homepage": "https://github.com/whiteCube/swipy#readme",
-  "dependencies": {
+  "devDependencies": {
     "laravel-mix": "^3.0.0"
   }
 }
